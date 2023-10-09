@@ -8,10 +8,13 @@ from ast import literal_eval
 from binascii import b2a_hex
 from collections import defaultdict
 from pathlib import Path
+from warnings import warn
 
 import hexdump
 from fsutilz import MMap
 from plumbum import cli
+
+warn("We have moved from M$ GitHub to https://codeberg.org/KOLANICH-tools/signatureCandidatesAutoDiscover.py , read why on https://codeberg.org/KOLANICH/Fuck-GuanTEEnomo .")
 
 try:
 	raise ImportError("hyperscan-based scanning doesn't work for now")
